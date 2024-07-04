@@ -31,17 +31,6 @@ const routes: Routes = [
       },
     ]
   },
-  {
-    path: '',
-    component: FullComponent,
-    children: [
-      {
-        path: 'chat',
-        loadChildren: () =>
-          import('./pages/chat/chat.module').then((m) => m.ChatModule),
-      },
-    ]
-  },
 ];
 
 @NgModule({

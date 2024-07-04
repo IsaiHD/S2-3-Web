@@ -14,9 +14,5 @@ export const navItems: NavItem[] = [
     iconName: 'message',
     route: '/greeting',
   },
-  {
-    displayName: 'Chat',
-    iconName: 'chat',
-    route: '/chat',  // Asegúrate de que esta ruta esté configurada correctamente en tu enrutador
-  },
+
 ];
