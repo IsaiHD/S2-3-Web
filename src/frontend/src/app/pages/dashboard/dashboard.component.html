@@ -3,8 +3,6 @@
 <head>
   <title>Chat en Vivo</title>
   <style>
-    /* Estilos CSS para el chat en vivo, ajusta según sea necesario */
-    /* Estilos CSS que has proporcionado anteriormente */
     .chat-container {
       display: flex;
       flex-direction: column;
@@ -86,7 +84,6 @@
       <h2>Chat en Vivo con ChatGPT</h2>
     </div>
     <div class="chat-content" id="chat-content">
-      <!-- Aquí se agregarán dinámicamente los mensajes -->
     </div>
     <div class="chat-input">
       <input type="text" id="message-input" placeholder="Escribe un mensaje...">
@@ -95,10 +92,10 @@
   </div>
 
   <script>
-    // Script JavaScript para manejar el chat en vivo, ajusta según sea necesario
+
     const chatContent = document.getElementById('chat-content');
     const messageInput = document.getElementById('message-input');
-    const API_KEY = ''; // Reemplaza con tu clave de API de OpenAI
+    const API_KEY = ''; // API de OpenAI
 
     async function sendMessage() {
       const messageToSend = messageInput.value;
@@ -148,7 +145,7 @@
         <div class="message-time">${new Date().toLocaleTimeString()}</div>
       `;
       chatContent.appendChild(messageDiv);
-      chatContent.scrollTop = chatContent.scrollHeight; // Desplazar al final
+      chatContent.scrollTop = chatContent.scrollHeight;
     }
   </script>
 </body>
